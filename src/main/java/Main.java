@@ -8,104 +8,104 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        // Categoría historia de Colombia
+        // Category Administrative Processes
 
-        Question question1 = new Question("¿Cuál fue el primer presidente de Colombia?", "Historia de Colombia", "A. Rafael Núñez", "B. Simón Bolívar", "C. Tomás Cipriano de Mosquera", "D. Francisco de Paula Santander", "b");
-        Question  question2 = new Question( "¿En qué año se consolidó Colombia como estado?", "Historia de Colombia", "A. 1810", "B. 1800", "C. 1795", "D. 1910", "a");
-        Question  question3 = new Question( "¿Cuál de estos no fue un nombre de Colombia?", "Historia de Colombia", "A. La gran Colombia", "B. Confederación Granadina", "C. República de Granada", "D. República de Colombia", "c");
-        Question  pregunta4 = new Question( "¿Cuál es el principal producto de exportación de Colombia?", "Historia de Colombia", "A. Petróleo", "B. Banano", "C. Flores", "D. Cafe ", "a");
-        Question  pregunta5 = new Question( "¿Cuál es el ave nacional de Colombia?", "Historia de Colombia", "A. El Cóndor de los Andes", "B. Tucán del caribe", "C. El aguila", "D. La golondrina ", "a");
+        Question question1 = new Question("It is the communication that occurs in the universe of society, of the company towards the general public, its potential customers and suppliers.", "Administrative Processes", "A. Social communication", "B. International communication", "C. External communication", "D. Organizational communication", "c");
+        Question  question2 = new Question( "It is the communication that follows in an official chain of command or that someone requires to perform a job", "Administrative Processes", "A. Hierarchical communication", "B. Formal communication", "C. Informal communication", "D. Upward communication", "d");
+        Question  question3 = new Question( "Which of these is not an objective of the audits?", "Administrative Processes", "A. Promote the proper use of resources", "B. Promote improvement", "C. Promote transparency", "D. Promote discipline", "d");
+        Question  question4 = new Question( "It is the process of influencing people so that they contribute to organizational and group goals (Koontz & Weihrich, 2013).", "Administrative Processes", "A. Leadership", "B. Management", "C. Empower", "D. Coaching ", "a");
+        Question  question5 = new Question( "Which of these is not a type of control?", "Administrative Processes", "A. Constant control", "B. Preventive control", "C. Structural control", "D. Corrective control", "c");
 
-        // Categoría historia de Cultura general
+        // Category Object-oriented programming
 
-        Question  pregunta6 = new Question( "¿Cuál es el río más largo del mundo?", "Cultura general", "A. El río amazonas", "B. El río nilo", "C. El río danubio", "D. El río Mississippi", "a");
-        Question  pregunta7 = new Question( "¿Cuánto duró la guerra de los 100 años?", "Cultura general", "A. 116 años", "B. 100 años", "C. 110 años", "D. 105 años", "a");
-        Question  pregunta8 = new Question( "¿Cuál es el deporte más practicado del mundo?", "Cultura general", "A. El fútbol", "B. La natación", "C. El baloncesto", "D. El béisbol", "b");
-        Question  pregunta9 = new Question( "¿Cuántos huesos tiene en total un ser humano?", "Cultura general", "A. 180", "B. 400", "C. 200", "D. 206", "d");
-        Question  pregunta10 = new Question( "¿En qué año fue el descubrimiento de América?", "Cultura general", "A. 1512", "B. 1482", "C. 1492 ", "D. 1530", "c");
+        Question  question6 = new Question( "What is the description that you think best defines the concept of 'class' in object-oriented programming?", "Object-oriented programming", "A. It is a concept similar to that of String.", "B. It is a sequentially ordered category of data", "C. It is a particular type of variable", "D. It is a model or template from which we create objects", "d");
+        Question  question7 = new Question( "When should you mark a method as final?", "Object-oriented programming", "A. When I want to reassign it", "B. When the author of the parent method wants to guarantee a very precise behavior.", "C. When I want to hide it.", "D. Never", "b");
+        Question  question8 = new Question( "What method should I invoke to run a program in Java?", "Object-oriented programming", "A. for", "B. start", "C. do", "D. main", "d");
+        Question  question9 = new Question( "What is an object in java?", "Object-oriented programming", "A. It is a grouping of data and functions", "B. Is a set of function declarations", "C. It is a grouping that ends an inheritance chain", "D. An instance of a class", "d");
+        Question  question10 = new Question( "What does it mean to instantiate a class?", "Object-oriented programming", "A. Connect two classes to each other", "B. Duplicate a class", "C. Delete a class ", "D. Create an object from the class", "d");
 
-        // Categoría Ciencia Básica
+        // Category Automata, Grammars and Languages
 
-        Question  pregunta11 = new Question( "¿Qué tipo de animales son los murciélagos?", "Ciencia Básica", "A. Mamíferos", "B. Aves", "C. Reptiles", "D. Anfibios", "a");
-        Question  pregunta12 = new Question( "¿En la botánica el tomate es?", "Ciencia Básica", "A. una verdura", "B. Una fruta", "C. Una hortaliza", "D. Una legumbre", "b");
-        Question  pregunta13 = new Question( "¿Cuál es el nombre de las partículas subatómicas de carga negativa?", "CCiencia Básica", "A. Electrones", "B. Protones", "C. Neutrones", "D. Negatrones", "a");
-        Question  pregunta14 = new Question( "¿Cuál es el elemento más abundante de la Tierra?", "Ciencia Básica", "A. El oxígeno", "B. El nitrógeno", "C. El hidrógeno", "D. El agua", "d");
-        Question  pregunta15 = new Question( "¿Cuántas patas tiene un arácnido?", "Ciencia Básica", "A. 4 patas", "B. 6 patas", "C. 8 patas", "D. No tiene patas", "c");
+        Question  question11 = new Question( "When we talk about minimization of an automaton, it refers to:", "Automata, Grammars and Languages", "A. Obtaining an automaton with as few states as possible.", "B. Get an automaton to define another language", "C. Decrease the language strings to be read in the automaton", "D. none of the above", "a");
+        Question  question12 = new Question( "The evolution of machines (computers) is mainly due to:", "Automata, Grammars and Languages", "A. Its application to solve context problems in programming languages.", "B. Your application to solve Mealy problems.", "C. Its application to solve infinite and complex problems.", "D. Its application to solve scientific problems.", "d");
+        Question  question13 = new Question( "A stack is a storage device that follows the principle of:", "Automata, Grammars and Languages", "A. The last to enter the first to leave", "B. The first to enter the last and exit", "C. The first to enter the first to leave", "D. The last to enter the last to leave", "a");
+        Question  question14 = new Question( "In a general context a Language can be defined as:", "Automata, Grammars and Languages", "A. A System of Conventional Symbols, spoken or written with which we communicate", "B. Meaning of the strings that compose it", "C. Set of instructions indicating actions to perform", "D. Study of the rules and principles that regulate its use", "a");
+        Question  question15 = new Question( "Indicate which of the following statements is true:", "Automata, Grammars and Languages", "A. Turing machines and stack automata are finite automata.", "B. Finite automata can only accept finite languages.", "C. Finite automata have a finite number of states", "D. none of the above", "c");
 
-        // Categoría Eventos históricos
+        // Category Database Fundamentals
 
-        Question  pregunta16 = new Question( "¿Cuál fue la causa inmediata de la primera guerra mundial?", "Eventos históricos", "A. 23", "B. 22", "C. 12", "D. 9", "c");
-        Question  pregunta17 = new Question( "¿Cuál fue el último emperador romano de Occidente?", "Eventos históricos", "A. Flavio Zenón", "B. Julio Nepote", "C. Marco Aurelio", "D. Rómulo Augusto", "d");
-        Question  pregunta18 = new Question( "¿Cuál se considera la mayor contienda bélica de la historia?", "Eventos históricos", "A. La primera Guerra mundial", "B. La segunda Guerra mundial ", "C. La Guerra de Siria", "D. La Guerra Fría", "b");
-        Question  pregunta19 = new Question( "¿La caída del muro de Berlín representa además?", "Eventos históricos", "A. El fin de la guerra fría", "B. El fin de la segunda guerra mundial", "C. La unificación de francia en un solo país nuevamente", "D. El fin del capitalismo", "a");
-        Question  pregunta20 = new Question( "¿El evento conocido como el asalto de la moneda tuvo lugar en ?", "Eventos históricos", "A. Francia", "B. Chile", "C. Estados unidos", "D. Argentina", "b");
+        Question  question16 = new Question( "When talking about keys in the relational model: ", "Database Fundamentals", "A. A foreign key in a relation R can also be the primary key of R.", "B. the primary key will never be a single field in the table", "C. The relational model never uses keys in its relationships", "D. In a table it is not necessary to carry a primary key", "a");
+        Question  question17 = new Question( "What are the user types in the databases?", "Database Fundamentals", "A. Programmers, designers, database administrators and auditors.", "B. End users, programmers, designers, and database administrators", "C. Designers, programmers, end users and testers", "D. End users, programmers and designers", "b");
+        Question  question18 = new Question( "What is the set of fields for the same object in the table called?", "Database Fundamentals", "A. Records or rows.", "B. attribute", "C. column", "D. none of the above", "a");
+        Question  question19 = new Question( "What types of relationships exist in entity-relationship diagram?", "Database Fundamentals", "A. Many to many.", "B. one by one", "C. One to many and vice versa.", "D. All the previous ones", "d");
+        Question  question20 = new Question( "Role of the DBA", "Database Fundamentals", "A. Manage concurrency.", "B. Enter data into the databases", "C. Operating system configuration", "D. Perform maintenance on the physical network.", "a");
 
-        // Categoría Videojuegos
+        // Category Web Engineering
 
-        Question  pregunta21 = new Question( "¿Qué equipo es campeón actual de League of Legends World Championship, también conocido como Worlds?", "Categoría Videojuegos", "A. SK Telecom T1 ", "B.Edward Gaming", "C. Fnatic", "D.Koi", "b");
-        Question  pregunta22 = new Question( "¿Qué jugador rompió en 2018 el récord histórico de súbditos farmeados en una partida de competitivo de League of Legends con un total de 1465?", "Categoría Videojuegos", "A. Werlyb ", "B.Faker ", "C. Rekkles", "D. Teddy", "d");
-        Question  pregunta23 = new Question( "¿Cuál es el récord de mayor duración de una partida de League of Legends en el campo competitivo?", "Categoría Videojuegos", "A. Giants vs Fnatic - 104 minutos en 2017", "B. nvictus Gaming vs 9z Team - 98 minutos en 2019", "C. Jin Air vs SKT - 94 minutos en 2018", "D. Mad Lions vs Koi - 86 minutos en 2021", "c");
-        Question  pregunta24 = new Question( "¿Cual es el jugador con más partidas competitivas jugados en League of Legends?", "Categoría Videojuegos", "A. Th3Antonio", "B. Faker", "C. Dopa", "D. Perkz", "b");
-        Question  pregunta25 = new Question( "¿Qué equipo fue el primer campeón de League of Legends World Championship, también conocido como Worlds?", "Categoría Videojuegos", "A. Fnatic en 2011", "B. PSG Talón en 2011", "C. Furious Gaming en 2010", "D. G2 en 2012", "a");
+        Question  question21 = new Question( "To integrate into web projects, what types of images are used?", "Web Engineering", "A. JPG, PNG, GIF", "B. JPG, GIF, PPT", "C. PNG, TIF, PSD", "D. PSD, PDF, JPG", "a");
+        Question  question22 = new Question( "Which of the following classes is not used to format text in Bootstrap?", "Web Engineering", "A. text-warning ", "B. text-primary", "C. text-dange", "D. All are used to format the text.", "d");
+        Question  question23 = new Question( "According to the web design pyramid, the last pillar refers to:", "Web Engineering", "A. Content design", "B. Interface design", "C. Architecture design", "D. Diseño de los componentes", "c");
+        Question  question24 = new Question( "What class can we use to highlight a text in Bootstrap?", "Web Engineering", "A. highlight", "B. stand-out", "C. foreground", "D. lead", "d");
+        Question  question25 = new Question( "It will be used as a version control system for the source code of the Web application", "Web Engineering", "A. File system", "B. Git System", "C. Binnacle", "D. Database", "b");
 
 
         ArrayList<Question> nivel1 = new ArrayList<Question>();
         nivel1.add(0, question1);
         nivel1.add(1, question2);
         nivel1.add(2, question3);
-        nivel1.add(3, pregunta4);
-        nivel1.add(4, pregunta5);
+        nivel1.add(3, question4);
+        nivel1.add(4, question5);
 
         ArrayList<Question> nivel2 = new ArrayList<Question>();
-        nivel2.add(0, pregunta6);
-        nivel2.add(1, pregunta7);
-        nivel2.add(2, pregunta8);
-        nivel2.add(3, pregunta9);
-        nivel2.add(4, pregunta10);
+        nivel2.add(0, question6);
+        nivel2.add(1, question7);
+        nivel2.add(2, question8);
+        nivel2.add(3, question9);
+        nivel2.add(4, question10);
 
         ArrayList<Question> nivel3 = new ArrayList<Question>();
-        nivel3.add(0, pregunta11);
-        nivel3.add(1, pregunta12);
-        nivel3.add(2, pregunta13);
-        nivel3.add(3, pregunta14);
-        nivel3.add(4, pregunta15);
+        nivel3.add(0, question11);
+        nivel3.add(1, question12);
+        nivel3.add(2, question13);
+        nivel3.add(3, question14);
+        nivel3.add(4, question15);
 
         ArrayList<Question> nivel4 = new ArrayList<Question>();
-        nivel4.add(0, pregunta16);
-        nivel4.add(1, pregunta17);
-        nivel4.add(2, pregunta18);
-        nivel4.add(3, pregunta19);
-        nivel4.add(4, pregunta20);
+        nivel4.add(0, question16);
+        nivel4.add(1, question17);
+        nivel4.add(2, question18);
+        nivel4.add(3, question19);
+        nivel4.add(4, question20);
 
         ArrayList<Question> nivel5 = new ArrayList<Question>();
-        nivel5.add(0, pregunta21);
-        nivel5.add(1, pregunta22);
-        nivel5.add(2, pregunta23);
-        nivel5.add(3, pregunta24);
-        nivel5.add(4, pregunta25);
+        nivel5.add(0, question21);
+        nivel5.add(1, question22);
+        nivel5.add(2, question23);
+        nivel5.add(3, question24);
+        nivel5.add(4, question25);
 
         Scanner scanner = new Scanner(System.in);
         Player jugador = new Player();
         Question pregunta = new Question();
 
-        // Iniciar el Juego
+        // Game Starting
         System.out.println("***********************************************************************");
-        System.out.println("**********BIENVENIDO AL CONCURSO DE PREGUNTAS Y RESPUESTAS **********");
-        System.out.println("Pon a prueba tus conocimientos y gana maravillosos premios");
+        System.out.println("********** WELCOME TO THE GAME WHO WANTS TO BE RICH **********");
+        System.out.println("Test your knowledge and win wonderful prizes");
         System.out.println("");
-        System.out.println("Ingresa tu nombre:");
+        System.out.println("Enter your name:");
         jugador.setName(scanner.nextLine());
         System.out.println("");
-        System.out.println("Bienvenido al juego: " + jugador.getName() );
-        System.out.println("La primera categoria de preguntas del juego es Historia de Colombia " +
-                "si responde la pregunta de manera acertada usted obtendra $50 dolares " );
+        System.out.println("Welcome to the game: " + jugador.getName() );
+        System.out.println("The first category of game questions is Administrative Processes " +
+                "if you answer the question correctly you will get 50 SofkaKoins " );
         pregunta.fifthRound(nivel1);
         pregunta.secondRound(nivel2);
         pregunta.thirdRound(nivel3);
         pregunta.fourthRound(nivel4);
         pregunta.fifthRound(nivel5);
         pregunta.mapPoints(jugador);
-        System.out.println(jugador.getName() +", El dinero ganado en total es: $"+ jugador.getSofkaCoins()+" Gracias por jugar");
+        System.out.println(jugador.getName() +", The SofkaKoins earned in total is: $"+ jugador.getSofkaCoins()+" Thanks for playing");
         PlayerDAO.createPlayerBD(jugador);
     }
 }

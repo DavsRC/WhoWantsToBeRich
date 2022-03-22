@@ -124,9 +124,9 @@ public class Question extends Player{
     public void makeQuestion(Question question){
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Por un total de $50 dolares seleccione la respuesta correcta");
+        System.out.println("For a total of $50 SofkaKoins select the correct answer");
         System.out.println("");
-        System.out.println(question.getDescription()+" Esta question pertenece a la categoría de: "+question.getCategory());
+        System.out.println(question.getDescription()+" This question belongs to the category of: "+question.getCategory());
 
         System.out.println(question.getOptionA());
         System.out.println(question.getOptionB());
@@ -136,25 +136,25 @@ public class Question extends Player{
         question.setPlayerAnswer(scanner.nextLine());
 
         if(question.getPlayerAnswer().equals(question.getCorrectAnswer())){
-            System.out.println("** Felicitaciones --Respuesta Correcta-- **");
+            System.out.println("** Congratulations --Correct Answer-- **");
             sumPoints();
         }else{
-            System.out.println("** Su respuesta es incorrecta, fin del juego **");
+            System.out.println("** Your answer is incorrect, game over **");
             System.exit(0);
         }
     }
 
     public void keepPlaying(){
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Tienes un total de: "+ getPoints() +" dólares");
-        System.out.println("¿Deseas continuar jugando?, si la siguiente pregunta la respondes de forma incorrecta tu dinero será 0$ y habrá finalizado el juego");
-        System.out.println("Si te retiras en este momento podras llevarte lo que haz ganado hasta ahora");
-        System.out.println("Si deseas continuar escribe: yes, si deseas retirarte escribe: no");
+        System.out.println("You have a total of: "+ getPoints() +" SofkaKoins");
+        System.out.println("Do you want to continue playing?, if the next question you answer incorrectly your SofkaKoins will be $0 and the game will have ended");
+        System.out.println("If you withdraw at this time you can take what you have earned so far");
+        System.out.println("If you want to continue write: yes, if you want to withdraw write: no");
         setNext(scanner.next());
         if(getNext().equalsIgnoreCase("yes")){
-            System.out.println("Has decidido continuar");
+            System.out.println("You have decided to continue");
         }else{
-            System.out.println("Te has retirado con un total de:" + getPoints() + " dólares");
+            System.out.println("You have withdraw with a total of:" + getPoints() + " SofkaKoins");
             System.exit(0);
         }
     }
@@ -164,12 +164,12 @@ public class Question extends Player{
         if (getPlayerAnswer() == getCorrectAnswer()){
             keepPlaying();
             if(getPlayerAnswer() == getCorrectAnswer () & getNext().equalsIgnoreCase("no")){
-                System.out.println("Te has retirado del juego, te llevas un total de "+ getSofkaCoins()+ " Puntos");
+                System.out.println("You have withdrawn from the game, you take a total of "+ getSofkaCoins()+ " SofkaKoins");
             }
         }else {
             if(getPlayerAnswer() != getCorrectAnswer()){
                 setPoints(0);
-                System.out.println("La partida ha finalizado");
+                System.out.println("The game is over");
             }
         }
     }
@@ -179,12 +179,12 @@ public class Question extends Player{
         if (getPlayerAnswer() == getCorrectAnswer()){
             keepPlaying();
             if(getPlayerAnswer() == getCorrectAnswer () & getNext().equalsIgnoreCase("no")){
-                System.out.println("Te has retirado del juego, te llevas un total de "+ getSofkaCoins()+ " Puntos");
+                System.out.println("You have withdrawn from the game, you take a total of "+ getSofkaCoins()+ " SofkaKoins");
             }
         }else {
             if(getPlayerAnswer() != getCorrectAnswer()){
                 setPoints(0);
-                System.out.println("La partida ha finalizado");
+                System.out.println("The game is over");
             }
         }
     }
@@ -194,12 +194,12 @@ public class Question extends Player{
         if (getPlayerAnswer() == getCorrectAnswer()){
             keepPlaying();
             if(getPlayerAnswer() == getCorrectAnswer () & getNext().equalsIgnoreCase("no")){
-                System.out.println("Te has retirado del juego, te llevas un total de "+ getSofkaCoins()+ " Puntos");
+                System.out.println("You have withdrawn from the game, you take a total of "+ getSofkaCoins()+ " SofkaKoins");
             }
         }else {
             if(getPlayerAnswer() != getCorrectAnswer()){
                 setPoints(0);
-                System.out.println("La partida ha finalizado");
+                System.out.println("The game is over");
             }
         }
     }
@@ -209,12 +209,12 @@ public class Question extends Player{
         if (getPlayerAnswer() == getCorrectAnswer()){
             keepPlaying();
             if(getPlayerAnswer() == getCorrectAnswer () & getNext().equalsIgnoreCase("no")){
-                System.out.println("Te has retirado del juego, te llevas un total de "+ getSofkaCoins()+ " Puntos");
+                System.out.println("TYou have withdrawn from the game, you take a total of "+ getSofkaCoins()+ " SofkaKoins");
             }
         }else {
             if(getPlayerAnswer() != getCorrectAnswer()){
                 setPoints(0);
-                System.out.println("La partida ha finalizado");
+                System.out.println("The game is over");
             }
         }
     }
@@ -222,12 +222,12 @@ public class Question extends Player{
     public void fifthRound(ArrayList<Question> questions){
         makeQuestion(questions.get(generateRandomNumber()));
         if(getPlayerAnswer() == getCorrectAnswer()){
-            System.out.println("Has ganado el juego");
+            System.out.println("You won the game");
         }
         else {
             if (getPlayerAnswer() != getCorrectAnswer()) {
                 setPoints(0);
-                System.out.println("La partida ha finalizado");
+                System.out.println("The game is over");
             }
         }
     }
