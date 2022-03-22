@@ -19,6 +19,17 @@ public class Question extends Player{
     public Question() {
     }
 
+    public Question(String description, String category, String optionA, String optionB, String optionC, String optionD, String correctAnswer) {
+        this.description = description;
+        this.category = category;
+        this.optionA = optionA;
+        this.optionB = optionB;
+        this.optionC = optionC;
+        this.optionD = optionD;
+        this.correctAnswer = correctAnswer;
+    }
+
+
     public String getDescription() {
         return description;
     }
